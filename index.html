@@ -17,28 +17,31 @@
     <div class="uk-container">
         <div class="uk-display-inline-block">
             <div class="uk-position-center">
-                <div class="uk-card uk-card-primary uk-card-body uk-border-rounded csz-box-shadow">
-                    <img class="uk-align-center" data-src="leaf.png" width="100" height="100" uk-img>
-                    <h1 class="uk-card-title uk-text-center">Mountain Okubo</h1>
-                    <form class="uk-form-stacked">
-                        <div class="uk-margin">
-                            <label class="uk-form-label">Username</label>
-                            <div class="uk-form-controls">
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                    <input class="uk-input" type="text">
-                                </div>
-                            </div>
-                            <label class="uk-form-label">Password</label>
-                            <div class="uk-form-controls">
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                                    <input class="uk-input" type="password">
-                                </div>
-                                
-                            </div>
+                <div class="uk-card uk-child-width-1-2 uk-card-secondary csz-primary-color csz-box-shadow" uk-grid>
+                    <div class="uk-card-media-right uk-cover-container">
+                        <img src="cam.jpg" alt="" uk-cover>
+                        <canvas width="400" height="600"></canvas>
+                    </div>
+                    <div class="uk-card-body uk-margin-medium-top">
+                        <div class="uk-text-center">
+                            <h3 class="uk-card-title">Please Sign In</h3>
                         </div>
-                    </form>
+                            <form class="uk-form-stacked">
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Username</label>
+                                    <div class="uk-form-control">
+                                        <input type="text" class="uk-input">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Password</label>
+                                    <div class="uk-form-control">
+                                        <input type="password" class="uk-input">
+                                    </div>
+                                </div>
+                                <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-top">LOGIN</button>
+                            </form>
+                    </div>
                 </div>
             </div>
         </div>

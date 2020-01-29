@@ -2,11 +2,13 @@
     background-image: url('a.jpg');
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    
+    height: 100vh;   
+}
+.csz-primary-color{
+    background-color: #674AAC;
 }
 .csz-box-shadow{
-    box-shadow: 0px 5px 50px#555555;
+    box-shadow: 0px 5px 30px#555555;
 }
 .csz-txtbox-background{
     background-color: #cccccc;
