@@ -1,3 +1,11 @@
+body{
+    background: #F4F4FA;
+    height: 100vh;
+}
+a,a:hover{
+    text-decoration: none;
+    color: #606060;
+}
 .csz-background-image{
     background-image: url('a.jpg');
     background-position: center;
@@ -5,11 +13,49 @@
     height: 100vh;   
 }
 .csz-primary-color{
-    background-color: #674AAC;
+    background-color: #AD65EC;
 }
 .csz-box-shadow{
     box-shadow: 0px 5px 30px#555555;
 }
 .csz-txtbox-background{
     background-color: #cccccc;
+}
+.csz-sidebar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 230px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+.csz-sidebar a {
+  padding: 15px 25px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  color: #606060;
+  transition: 0.2s ease-in-out
+}
+.csz-sidebar i{
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.csz-sidebar a:hover,
+.csz-sidebar .active{
+  background-color: #CECECE;
+  border-left: 10px solid #AD65EC;
+}
+.csz-sidebar .active i,
+.csz-sidebar a:hover i{
+    color: #AD65EC;
+}
+.csz-navbar{
+    background-color: #FFFFFF !important;
+    box-shadow: #DEDEDE 1px 1px 15px;
+}
+
+#user-icon{
+    border-radius: 15px;
 }
