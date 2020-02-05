@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body{
     background: #F4F4FA;
     height: 100vh;
@@ -13,7 +14,7 @@ a,a:hover{
     height: 100vh;   
 }
 .csz-primary-color{
-    background-color: #AD65EC;
+    background-color: #8C489F;
 }
 .csz-box-shadow{
     box-shadow: 0px 5px 30px#555555;
@@ -26,15 +27,20 @@ a,a:hover{
     top: 0;
     bottom: 0;
     width: 230px;
-    background-color: #ffffff;
+    background-color: #1E1E1E;
     z-index: 1000;
+}
+.csz-sidebar-logo{
+   color: #F1F0FF;
+   Font-family: 'Montserrat';
 }
 .csz-sidebar a {
   padding: 15px 25px 15px;
   text-decoration: none;
   font-size: 15px;
+  font-family: 'Montserrat';
   display: block;
-  color: #606060;
+  color: #F1F0FF;
   transition: 0.2s ease-in-out
 }
 .csz-sidebar i{
@@ -44,18 +50,34 @@ a,a:hover{
 }
 .csz-sidebar a:hover,
 .csz-sidebar .active{
-  background-color: #CECECE;
-  border-left: 10px solid #AD65EC;
+  background-color: #333333;
+  border-left: 6px solid #44BE4A;
+  color: #44BE4A;
 }
-.csz-sidebar .active i,
 .csz-sidebar a:hover i{
-    color: #AD65EC;
+    color: #44BE4A;
 }
 .csz-navbar{
     background-color: #FFFFFF !important;
     box-shadow: #DEDEDE 1px 1px 15px;
 }
-
 #user-icon{
     border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px){
+    .csz-sidebar{
+        width: 75px;
+        overflow-x: hidden;
+    }
+    .csz-sidebar-logo{
+        visibility: hidden;
+    }
+    .csz-sidebar a{
+        text-align:center;
+    }
+    .csz-sidebar-link{
+        display:none;
+    }
+
 }
