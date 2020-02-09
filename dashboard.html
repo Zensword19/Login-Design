@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,14 @@
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
+
 <body>
     <div class="csz-sidebar">
+        <h2 id="closeButton" class="uk-align-right uk-padding-small">X</h2>
         <h3 class="uk-text-center csz-sidebar-logo uk-padding">Title Logo</h3>
         <a href="#" class="active">
             <i class="fas fa-tachometer-alt"></i>
@@ -33,11 +39,18 @@
         </a>
     </div>
     <nav class="uk-navbar-container csz-navbar" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-navbar-item">
+                    <i class="fas fa-bars fa-2x" id="burgerIcon"></i>
+                </li>
+            </ul>
+        </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
                 <li class="uk-navbar-item">
                     <a href="#">
-                        <img id="user-icon" src="a.jpg" height="50" width="50">
+                        <img class="uk-border-circle" src="a.jpg" height="50" width="50">
                     </a>
                     <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -51,11 +64,61 @@
             </ul>
         </div>
     </nav>
-    <section>
+    <section class="main-wrapper">
+        <div class="uk-child-width-1-4" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-small uk-border-rounded">
+                    <div class="uk-card-header"  style="background-color: #FF5765">
+                        <h3 class="uk-card-title txt-white uk-text-light" >Item 1</h3>
+                    </div> 
+                    <div class="uk-card-body">
+                        <p class="uk-text-bold uk-text-right">4</p>
+                    </div>                  
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-small uk-border-rounded">
+                    <div class="uk-card-header"  style="background-color: #FFDB15">
+                        <h3 class="uk-card-title txt-white uk-text-light" >Item 2</h3>
+                    </div> 
+                    <div class="uk-card-body">
+                        <p class="uk-text-bold uk-text-right ">4</p>
+                    </div>                  
+                </div>
+            </div>  
+            <div>
+                <div class="uk-card uk-card-default uk-card-small uk-border-rounded">
+                    <div class="uk-card-header"  style="background-color: #8A6FDF">
+                        <h3 class="uk-card-title txt-white uk-text-light" >Item 3</h3>
+                    </div> 
+                    <div class="uk-card-body">
+                        <p class="uk-text-bold uk-text-right">4</p>
+                    </div>                  
+                </div>
+            </div>  
+            <div>
+                <div class="uk-card uk-card-default uk-card-small uk-border-rounded">
+                    <div class="uk-card-header"  style="background-color: #A8E10C">
+                        <h3 class="uk-card-title txt-white uk-text-light" >Item 4</h3>
+                    </div> 
+                    <div class="uk-card-body">
+                        <p class="uk-text-bold uk-text-right">4</p>
+                    </div>                  
+                </div>
+            </div>  
+        </div>
+        <div class="uk-card uk-card-default uk-margin-small-top uk-border-rounded">
+            <div class="uk-card-header">
+                <h1 class="uk-card-title">Previous Commitments</h1>
+            </div>
+            <div class="uk-card-body">
 
-        
+            </div>
+        </div>
     </section>
+
 </body>
 <script src="js/uikit.js"></script>
 <script src="https://kit.fontawesome.com/2aa5fb3ba7.js" crossorigin="anonymous"></script>
+
 </html>

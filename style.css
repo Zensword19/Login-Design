@@ -3,9 +3,15 @@ body{
     background: #F4F4FA;
     height: 100vh;
 }
+.hide{
+    left: -0px !important;
+}
 a,a:hover{
     text-decoration: none;
     color: #606060;
+}
+.txt-white{
+    color: #FFFFFF !important;
 }
 .csz-background-image{
     background-image: url('a.jpg');
@@ -29,6 +35,7 @@ a,a:hover{
     width: 230px;
     background-color: #1E1E1E;
     z-index: 1000;
+    transition: all 0.1s ease-in;
 }
 .csz-sidebar-logo{
    color: #F1F0FF;
@@ -64,20 +71,33 @@ a,a:hover{
 #user-icon{
     border-radius: 15px;
 }
+#closeButton{
+    display: none;
+}
+#burgerIcon{
+    display: none;
+}
+.main-wrapper{
+    margin-left: 240px;
+    padding: 20px;
+}
+
+
+
 
 @media only screen and (max-width: 768px){
+    #burgerIcon{
+        display: block;
+        margin-left: 30px;
+    }
+    #closeButton{
+        display: block;
+    }
     .csz-sidebar{
-        width: 75px;
-        overflow-x: hidden;
+        left: -230px;
     }
-    .csz-sidebar-logo{
-        visibility: hidden;
-    }
-    .csz-sidebar a{
-        text-align:center;
-    }
-    .csz-sidebar-link{
-        display:none;
+    .main-wrapper{
+        margin-left: 0px;
     }
 
 }
