@@ -29,10 +29,11 @@ a,a:hover{
     background-color: #cccccc;
 }
 .csz-sidebar{
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     width: 230px;
+    min-height: 100vh;
     background-color: #1E1E1E;
     z-index: 1000;
     transition: all 0.1s ease-in;
